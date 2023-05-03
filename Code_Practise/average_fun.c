@@ -36,5 +36,6 @@ int average(int n , int arr[])
      }
      avg = sum / n;
      printf("The average of is : %d", avg);
+     //git
      return 0;
 }
