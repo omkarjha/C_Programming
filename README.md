@@ -18,7 +18,7 @@ The programs stored in this repository cover a range of basic topics in C progra
 
 ## How to Use
 
-To use this repository, simply clone or download the repository to your local machine. The programs are organized by topic in separate folders, making it easy to find the program you need.
+To use this repository, simply clone or download the repository to your local machine. The programs are named by topic, making it easy to find the program you need.
 
 Each program is stored in its own file with a descriptive name, making it easy to understand what each program does.
 
