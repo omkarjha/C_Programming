@@ -13,7 +13,11 @@ int main()
 
     sum = a + b;
 
-    printf("The sum of the two numbers is : %d",sum);
+    printf("The sum of the two numbers is : %d \n",sum);
+    
+    int c = 10;
+    printf("%d",c);
 
     return 0;
-}
+
+}   
