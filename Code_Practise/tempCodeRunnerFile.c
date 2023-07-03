@@ -1,1 +1,1 @@
-//Input of first number
+printf("\n");

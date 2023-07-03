@@ -1,13 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int skip=5, i=0;
-    while(i<10){
+int main()
+{
+    int skip = 5, i = 0;
+    while (i < 10)
+    {
         i++;
-        if(i!=skip){
+        if (i != skip)
+        {
             continue;
         }
-        else{
+        else
+        {
             printf("%d\n", i);
         }
     }

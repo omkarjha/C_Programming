@@ -1,8 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
     int physics, chemistry, maths;
-    float total;
+    int total;
     printf("Enter Physics Marks\n");
     scanf("%d", &physics);
 
@@ -11,11 +12,13 @@ int main(){
 
     printf("Enter Maths Marks\n");
     scanf("%d", &maths);
-    total = (physics + maths + chemistry)/3;
-    if((total<40) || physics<33 || maths<33 || chemistry<33){
+    total = (physics + maths + chemistry) / 3;
+    if ((total < 40) || (physics < 33) || (maths < 33) || (chemistry < 33))
+    {
         printf("Your total percentage is %d and you are fail\n", total);
     }
-    else{
+    else
+    {
         printf("Your total percentage is %d and you are pass\n", total);
     }
     return 0;
