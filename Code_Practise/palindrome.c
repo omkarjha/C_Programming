@@ -26,6 +26,6 @@ int main()
         /* code */
         printf("%d  is not a palindrome number.",temp);
     }
-    
-    
+
 }
+
