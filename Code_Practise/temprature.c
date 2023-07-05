@@ -1,24 +1,41 @@
-#include <stdio.h>
+//(C * 9 / 5) + 32 = F
+//(F - 32) * 5 / 9 = C
 
+#include <stdio.h>
+float convert(float temp, char scale)
+{
+    float convertedTemp;
+    switch (scale)
+    {
+    case 'c':
+    case 'C':
+        convertedTemp = (temp - 32) * 5 / 9;
+        break;
+    case 'f':
+    case 'F':
+        convertedTemp = (temp * 9 / 5) + 32;
+        break;
+    default:
+        printf("Invalid Choice!!!");
+        convertedTemp = 0;
+        break;
+    }
+    return convertedTemp;
+}
 int main()
 {
-    //(C * 9 / 5) + 32 = F
-    //(F - 32) * 5 / 9 = C 
-    float fh, cl;
-
     char choice;
+    float inputTemp;
+    float new;
 
-    printf("Press C for convert Fahrenheit to Celsius : \n");
-    printf("Press F for convert Celsius to Fahrenheit : \n");
+    printf("Enter the Temprature:");
+    scanf("%f",&inputTemp);
+    printf("Enter the choice :");
+    scanf(" %c",&choice);
 
-    printf("Enter your choice :");
-    scanf("%c", &choice);
+    new = convert(inputTemp,choice);
+    printf("Converted Temprature : %.2f \n",new);
 
-    if(choice == 'c' || choice == 'C' )
-    {
-        printf("Enter temprature in Fahrenheit scale :");
-        scanf("%d",&fh);
-        cl = (fh - 32) * 5 / 9;
-        printf("Temprature in Celsius : %d",cl); 
-    }
+
+    return 0;
 }
