@@ -12,8 +12,8 @@ int main()
     q = &p;
 
     printf("%d\n",a);
-    printf("%d\n",*p);
-    printf("%d\n",**q);
+    printf("%u\n",p);
+    printf("%u\n",q);
     // printf("%d",a);
     return 0;
 }
