@@ -1,19 +1,6 @@
-#include<stdio.h>
 
-int main()
-{
-    int a;
-    int *p;
-    int **q;
-
-    scanf("%d",&a);
-
-    p = &a;
-    q = &p;
-
-    printf("%d\n",a);
-    printf("%d\n",*p);
-    printf("%d\n",**q);
-    // printf("%d",a);
-    return 0;
-}
+    // printf("%d\n", arr1[0]);
+    // printf("%d\n", arr1[1]);
+    // printf("%d\n", arr1[2]);
+    // printf("%d\n", arr1[3]);
+    // printf("%d\n", arr1[4]);
