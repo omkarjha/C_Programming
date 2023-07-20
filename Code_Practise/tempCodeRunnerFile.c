@@ -1,1 +1,1 @@
-    int arrsum = sumarr(array, size);
+ // puts(strupr(str1));
