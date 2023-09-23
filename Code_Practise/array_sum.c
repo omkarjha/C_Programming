@@ -15,7 +15,7 @@ int main()
     {
         sum += arr[i];
     }
-    printf("The elements of the array is : ");
+    printf("The sum of the elements of the array is : ");
     for(i=0;i<num;i++)
     {
         printf("%d \t",arr[i]);

@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <limits.h>
 #include <stdlib.h>
 void func(int arr[], int n)
 {
