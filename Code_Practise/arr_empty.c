@@ -1,27 +1,27 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <stdbool.h>
 
-bool ifarremp(int arr[], int size)
+bool ifarremp(int size)
 {
-    if(size == 0)
+    if (size == 0)
         return true;
     else
         return false;
 }
 int main()
-{   
-    int num,i;
+{
+    int num, i;
     int arr[50];
     printf("Enter the number of elements in the array:");
-    scanf("%d",&num);
-    printf("Enter the elements of the array : \n");
-    for(i=0;i<num;i++)
-    {
-        scanf("%d",&arr[i]);
-    }
-    if(ifarremp(arr[50],num))
+    scanf("%d", &num);
+    if (ifarremp(num) == true)
         printf("The array is empty");
     else
-        printf("The array is not empty");
+        printf("Enter the elements of the array : \n");
+    for (i = 0; i < num; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
     return 0;
 }
