@@ -1,42 +1,54 @@
-// Write a function that takes an array of number as input and returns the largest number in the array
-
+// Write a function that takes an array as input and find the largest element in the array.
 #include <stdio.h>
-int array(int size)
+
+int findLargestNumber(int arr[], int size)
 {
-    int i, arr[50];
-    printf("Enter the elements :\n");
-    for (i = 0; i < size; i++)
+
+    if (size == 0)
     {
-        scanf("%d", &arr[i]);
-    }
-    printf("The array elements:");
-    for (i = 0; i < size; i++)
-    {
-        printf("%d \t", arr[i]);
+        printf("The array is empty\n");
+        return -1;
     }
 
-    return arr;
-}
+    int largest = arr[0];
 
-int largestarr(int arr2[],int size)
-{
-    int i;
-    int max = arr2[0];
-    for (i = 0; i < size; i++)
+    for (int i = 1; i < size; i++)
     {
-        if (max > arr2[i])
-
-            max = arr2[i];
+        if (arr[i] > largest)
+        {
+            largest = arr[i];
+        }
     }
-    printf("The maximum element from the array is : %d",max);
+
+    return largest;
 }
 
 int main()
 {
-    int n;
-    printf("Enter the size of the array :");
-    scanf("%d", &n);
-    int arr1 = array(n);
-    largestarr(arr1,n);
+    int size;
+    printf("Enter the size of the array: ");
+    scanf("%d", &size);
+
+    if (size <= 0)
+    {
+        printf("Invalid array size\n");
+        return 1;
+    }
+
+    int numbers[50];
+
+    printf("Enter %d numbers:\n", size);
+    for (int i = 0; i < size; i++)
+    {
+        scanf("%d", &numbers[i]);
+    }
+
+    int largestNumber = findLargestNumber(numbers, size);
+
+    if (largestNumber != -1)
+    {
+        printf("The largest number is: %d\n", largestNumber);
+    }
+
     return 0;
 }
