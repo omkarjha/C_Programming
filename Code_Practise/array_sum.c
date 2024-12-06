@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i,num,arr[100];
+    int i,num,arr[10];
     int sum = 0;
     printf("Enter the number of elements in the array:");
     scanf("%d",&num);
@@ -15,7 +15,7 @@ int main()
     {
         sum += arr[i];
     }
-    printf("The elements of the array is : ");
+    printf("The sum of the elements of the array is : ");
     for(i=0;i<num;i++)
     {
         printf("%d \t",arr[i]);

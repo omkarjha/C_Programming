@@ -6,7 +6,7 @@ int sumofdigits(int number)
 
     if (number < 10)
     {
-        number = sum;
+        return(number);
     }
     else
     {
@@ -17,7 +17,7 @@ int sumofdigits(int number)
             number /= 10;
         }
     }
-    return sum;
+    return sumofdigits(sum);
 }
 int main()
 {
