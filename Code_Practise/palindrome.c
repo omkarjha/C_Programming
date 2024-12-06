@@ -18,12 +18,10 @@ int main()
     }
     if (temp == sum)
     {
-        /* code */
         printf("%d is a palindrome number.",temp);
     }
     else
     {
-        /* code */
         printf("%d  is not a palindrome number.",temp);
     }
 
